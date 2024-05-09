@@ -96,7 +96,7 @@ hr {
 
 #nav_bar {
   display: flex;
-  justify-content: flex-end; /* Add this line */
+  justify-content: flex-end;
 }
 
 #nav_bar ul {
@@ -167,7 +167,7 @@ a {
   }
 }
 
-#iterative-background {
+#responsive-background {
   background-image: url("./case-studies/responsive-redesign/assets/site.png");
   background-size: contain;
   width: 400px;
@@ -185,9 +185,10 @@ a {
 .case-study-card {
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(2px) saturate(70%);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   width: 400px;
-  height: 250px;
+  height: 300px;
   border-radius: 20px;
   align-items: baseline;
   text-align: center;
@@ -205,7 +206,7 @@ a {
   }
 }
 
-#iterative-background:hover {
+#responsive-background:hover {
   background-color: #dfb6ee;
 }
 
