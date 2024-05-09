@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400&display=swap"
+    />
+  </head>
+
+  <body>
+    <div id="nav_wrapper">
+      <div id="name"><a href="../../index.html">David Eskilson</a></div>
+      <nav id="nav_bar">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../index.html">Case Studies</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <div id="title">
+        <h1>Responsive Redesign</h1>
+      </div>
+      <div id="portfolio-readiness">
+        <div>
+          <h2>Introduction and Context</h2>
+          <p>
+            In this project, I had the opportunity to redesign a website of my
+            choice to include better design principles, including responding to
+            different screen sizes. This project showcases my front end web
+            development skills as well as my knowledge of core design ideas.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div id="part1">
+        <div>
+          <h2>Problem: Unresponsive Site</h2>
+          <!-- <p>
+          In this section, I picked my website and analyzed its problems,
+          including those relating to general use as well as accessibility.
+        </p> -->
+          <div id="picking-webpage">
+            <h3>Picking a Webpage</h3>
+            <p>
+              For this redesign, I chose the Glocester RI Town Council Website
+              (<a href="https://www.glocesterri.gov/towncouncil.htm"
+                >linked here</a
+              >). Feel free to use the frame below to take a look at the
+              interface (and note that it does not respond to the in site
+              frame).
+            </p>
+            <!-- <p>
+            Link to the website:
+            <a href="https://www.glocesterri.gov/towncouncil.htm">Here</a>
+          </p> -->
+            <!-- <p>
+            Screenshot (note that the website continues below the screenshot;
+            navigate to the link to see the page in its entirety):
+          </p>
+          <img
+            id="original-site"
+            alt="Screenshot of the original website that I redesigned for this project."
+            src="./assets/website_screenshot.png"
+          /> -->
+            <div class="iframe-wrapper">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="800"
+                height="450"
+                src="https://www.glocesterri.gov/towncouncil.htm"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <!-- <p>
+            Why I chose it: Choosing a website was actually somewhat of a
+            challenge for me, but I followed the advice on the handout and
+            looked at local government websites, eventualy finding one neaby
+            Providence; I chose it since the design immediately to me looked to
+            be in need of improvement, and there was no responsiveness to mobile
+            use, which I was actually on at the time of finding the website.
+          </p> -->
+          </div>
+          <div id="problems">
+            <h3>Issues with the Site</h3>
+            <p>
+              There were some primary issues with this site that I sought to fix
+              in my redesign:
+            </p>
+            <ul>
+              <li>
+                In the table for the agendas and minutes the agenda and minutes
+                documents for a partpicular meeting are not necessarily
+                horizontally aligned, which can create confusion and unnecessary
+                extra scanning
+              </li>
+              <li>
+                While there is clear delineation for seperate years, there is
+                none for months, making it somewhat challenging to locate a
+                specific month's agenda/minutes
+              </li>
+              <li>
+                There is no responsive redesign for a mobile app, meaning users
+                are relegated to the same interface whose proportions are not
+                ideal on a small screen size. This impedes all user types, since
+                the interface is simply not designed to handle a mobile sized
+                screen
+              </li>
+              <li>
+                The town administrative information is scattered between the top
+                and bottom, and it is densely packed without a lot of meta-info
+                that explains the relevance
+              </li>
+            </ul>
+            <p>
+              All of these problems can lead to issues with learnability,
+              memorability, and efficiency:
+            </p>
+            <ul>
+              <li>
+                <b>Learnability:</b> the interface is relatively simple,
+                although the problems I brought up could make using the
+                interface to locate certain agendas/minutes more challenging
+                than necessary
+              </li>
+              <li>
+                <b>Memorability:</b> returning users may have trouble memorizing
+                the specific place of a certain link to an agenda/minutes
+                document and then may have to search the entire table again
+              </li>
+              <li>
+                <b>Efficiency:</b> frequent users could have the same troubles
+                as only semi-frequent returning users, where it is very hard to
+                memorize the specific location of one of the document links;
+                additionally, for every new meeting (a semi-monthly event), the
+                table is shifted downward, further complicating the issue of
+                being able to remember a specific location
+              </li>
+            </ul>
+          </div>
+          <div id="accessibility">
+            <h3>Accessibility Considerations</h3>
+            <p>
+              I also looked at the accessibility of the site. I generated this
+              WebAIM report (<a
+                href="https://wave.webaim.org/report#/https://www.glocesterri.gov/towncouncil.htm"
+                >linked here</a
+              >):
+            </p>
+            <!-- <p>Here is a partial screenshot of part of the report:</p>
+          <img
+            id="original-site"
+            alt="Screenshot of the WebAIM WAVE reoprt for the original version of the website I redesigned."
+            src="./assets/webaim_wave.png"
+          /> -->
+            <!-- <p> 
+            Link to the report:
+            <a
+              href="https://wave.webaim.org/report#/https://www.glocesterri.gov/towncouncil.htm"
+              >Here</a
+            >
+          </p> -->
+            <div class="iframe-wrapper">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="800"
+                height="450"
+                src="https://wave.webaim.org/report#/https://www.glocesterri.gov/towncouncil.htm"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p>
+              The report emphasizes issues relating to color contrast,
+              especially as it relates to the links within the table to the
+              agendas/minutes. Additionally, the color of the email links, being
+              the same, also does not have sufficient contrast. Just looking at
+              the page, the contrast does seem insufficient, since the color
+              used for the links is bright and hard to read, making it not ideal
+              for text.
+            </p>
+            <p>
+              The report also references some other more behind the scenes
+              issues with the page. No tiered headings (h1, h2, etc.) are used
+              in the site, which is problematic since those using a screen
+              reader need those headings to help provide structure to the page
+              so they can understand it. Additionally, the report noted that the
+              logo image lacked alt text, another accesssibility issue for
+              individuals who make use of a screen reader.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="part2">
+        <div>
+          <h2>Solution Phase 1: Visual Redesign</h2>
+          <!-- <p>
+          In this segment of the project, I developed my redesign, starting with
+          simple speed sketches to brainstorm and ultimately ending up with
+          high-fidelity mockups made in Figma that closely mirror the final
+          page.
+        </p> -->
+          <div id="speed-sketching">
+            <h3>Speed Sketching</h3>
+            <p>
+              I did some speed sketching to brainstorm ideas for my redesign,
+              and attemped to create a unique idea for each sketch. Here are my
+              nine sketches, completed one per minute:
+            </p>
+            <img
+              src="./assets/speedsketches.png"
+              alt="Nine speed sketches to brainstorm ideas for the redesign of my chosen website"
+            />
+          </div>
+          <div id="./assets/finalsketch.png">
+            <h3>Final Sketch</h3>
+            <p>
+              Shown here is my final sketch for my redesign. This final sketch
+              includes various design elements from my speed sketches, including
+              the cards from sketches 3, 5, and 7; the information button from
+              card 9; and the link navigation mechanism from sketch 4.
+            </p>
+            <img
+              src="assets/finalsketch.png"
+              alt="Final sketch of my redesign for my chosen website"
+            />
+          </div>
+          <div id="lo-fi">
+            <h3>Low Fidelity Mockups</h3>
+            <p>
+              I then created low-fidelity mockups in Figma, each for a different
+              screen size. I added annotations to them that indicate how they
+              solve the problems I discussed earlier. Note that for reference, I
+              include a side-by-side blank frame of the corrosponding device's
+              size.
+            </p>
+            <!-- <p>
+            Please note that I did not make these images larger so as to ease
+            navigation on this overall site, but the images are sufficiently
+            high quality that zooming in on the details is be possible if
+            desired.
+          </p> -->
+            <h4>Mobile Lo-Fi</h4>
+            <div class="iframe-wrapper">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="700"
+                height="1600"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp2xSzJQlR5FHlbSp6zeW3h%2FResponsive-Redesign%3Ftype%3Ddesign%26node-id%3D161%253A1190%26mode%3Ddesign%26t%3DhZKAt3NkGhWbDrOW-1"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <!-- <img src="assets/Section 3.png" alt="iphone lo" /> -->
+            <h4>Tablet Lo-Fi</h4>
+            <div class="iframe-wrapper">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="700"
+                height="1400"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp2xSzJQlR5FHlbSp6zeW3h%2FResponsive-Redesign%3Ftype%3Ddesign%26node-id%3D161%253A1021%26mode%3Ddesign%26t%3DhZKAt3NkGhWbDrOW-1"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <!-- <img src="assets/Section 2.png" alt="tablet low" /> -->
+            <h4>Desktop Lo-Fi</h4>
+            <div class="iframe-wrapper">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="700"
+                height="600"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp2xSzJQlR5FHlbSp6zeW3h%2FResponsive-Redesign%3Ftype%3Ddesign%26node-id%3D161%253A1022%26mode%3Ddesign%26t%3DhZKAt3NkGhWbDrOW-1"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <!-- <img src="assets/Section 4.png" alt="desktop low" /> -->
+          </div>
+          <div id="visual-style-guide">
+            <h3>Visual Style Guide</h3>
+            <p>
+              I then created a visual style guide in order to ensure that I
+              maintained consistency across all of my scren sizes. I used this
+              as a basis for the design of my high-fidelity mockups and
+              ultimately my final webpage.
+            </p>
+            <div class="iframe-wrapper">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="800"
+                height="1200"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp2xSzJQlR5FHlbSp6zeW3h%2FResponsive-Redesign%3Ftype%3Ddesign%26node-id%3D161%253A1849%26mode%3Ddesign%26t%3DhZKAt3NkGhWbDrOW-1"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <!-- <img src="assets/Section 5.png" alt="desktop low" /> -->
+          </div>
+          <div id="hi-fi">
+            <h3>High Fidelity Mockups</h3>
+            <p>
+              Using my visual style guide, I created three high-fidelity
+              mockups, each for a different screen size. I then was able to use
+              these mockups as a guide when deciding how to code my final
+              website.
+            </p>
+            <h4>Mobile Hi-Fi</h4>
+            <div class="iframe-wrapper">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="700"
+                height="1700"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp2xSzJQlR5FHlbSp6zeW3h%2FResponsive-Redesign%3Ftype%3Ddesign%26node-id%3D161%253A2037%26mode%3Ddesign%26t%3DJDHBXA3h59Zqr27f-1"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <!-- <img src="assets/Section 6.png" alt="iphone high" /> -->
+            <h4>Tablet Hi-Fi</h4>
+            <div class="iframe-wrapper">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="700"
+                height="1400"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp2xSzJQlR5FHlbSp6zeW3h%2FResponsive-Redesign%3Ftype%3Ddesign%26node-id%3D161%253A2038%26mode%3Ddesign%26t%3DhZKAt3NkGhWbDrOW-1"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <!-- <img src="assets/Section 7.png" alt="tablet high" /> -->
+            <h4>Desktop Hi-Fi</h4>
+            <div class="iframe-wrapper">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="800"
+                height="800"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp2xSzJQlR5FHlbSp6zeW3h%2FResponsive-Redesign%3Ftype%3Ddesign%26node-id%3D161%253A2039%26mode%3Ddesign%26t%3DhZKAt3NkGhWbDrOW-1"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <!-- <img src="assets/Section 8.png" alt="desktop high" /> -->
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="part3">
+        <div>
+          <h2>Solution Part 2: Coded Responsive Redesign</h2>
+          <!-- <p>
+          In this final component of the project, I created my redesigned
+          website using HTML and CSS, utilizing flex boxes and media queries to
+          allow for responsiveness.
+        </p> -->
+          <p>
+            Finally, I coded my website using HTML and CSS. I used a flexbox
+            display in order to prioritize responsiveness. I also included media
+            queries based on the screen size that changed the flexbox CSS.
+            Specifically, on a mobile device, all elements are vertical, while
+            as the screen size gets larger and larger more elements are instead
+            located horozintally from one another. You can take a look at my
+            redesigned site below (notice that it responds to fit the in site
+            frame, in contrast to the initial site above) or view the site
+            <a href="https://davideskilson.github.io/Responsive_Redesign/"
+              >here</a
+            >
+          </p>
+          <iframe
+            style="border: 1px solid rgba(0, 0, 0, 0.1)"
+            width="100%"
+            height="800"
+            src="https://davideskilson.github.io/Responsive-Redesign/"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Here are some brief screenshots, but note that scrolling continues
+            below, so be sure to check out the link/frame to view the entire
+            page. The first image is on a mobile sized screen, the next on a
+            tablet sized screen, and the last on a desktop sized screen.
+          </p>
+          <h4>Mobile</h4>
+          <img src="assets/phone.png" alt="redesign phone" />
+          <h4>Tablet</h4>
+          <div class="iframe-wrapper"></div>
+          <img src="assets/tablet.png" alt="redesign tablet" />
+          <h4>Desktop</h4>
+          <img src="assets/site.png" alt="redesign computer" />
+        </div>
+      </div>
+      <hr />
+      <div id="portfolio-readiness">
+        <div>
+          <h2>Learnings and Reflections</h2>
+          <p>
+            Over the course of completing this project, I have had the chance to
+            both improve my skills as a designer as well as develop improved
+            thinking patterns relating to design. Regarding the former, I got
+            great experience using Figma to create a visual style guide and
+            mockups; I also got the chance to use vanilla HTML and CSS
+            (including media queries) to create a full-fledged website, modulo
+            the interactive components. Considering my improved designer
+            mindset, I had the chance to think about core design principles such
+            as layout, color, visual hierachy, etc. and apply them to a real
+            world scenario. Overall, I am pleased with what I have accomplished
+            and I look forward to developing my skills in future endevours.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,40 +1,54 @@
 h1 {
-  color: lightcoral;
+  color: #53ffcb;
   text-align: center;
-  font-family: "Poppins";
+  font: 1em/1.2 "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 60px;
 }
 
 h2 {
-  font-family: "Poppins";
-  color: palevioletred;
+  font: 1em/1.2 "Poppins", sans-serif;
+  color: #fb7b54;
+  font-size: 30px;
+  font-weight: 300;
 }
 
 h3 {
-  font-family: "Poppins";
-  color: darkcyan;
+  font: 1em/1.2 "Poppins", sans-serif;
+  color: #ff5da0;
+  font-size: 25px;
+  font-weight: 300;
 }
 
 h4 {
-  font-family: "Poppins";
-  color: rgb(109, 59, 94);
+  font: 1em/1.2 "Poppins", sans-serif;
+  color: #ffdd56;
+  font-size: 23px;
+  font-weight: 300;
 }
 
 html {
-  max-width: 900px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px 20px;
 }
 
 body {
-  background-color: aliceblue;
+  --main-blue: #62d8ff;
+  background-color: var(--main-blue);
   justify-content: center;
   align-items: center;
+  max-width: 90vw;
 }
 
 p,
 ul {
-  font-family: "Lato";
-  color: darkolivegreen;
+  font: 1.2em/1 "Lato", sans-serif;
+  color: #5d5d5d;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 img {
@@ -48,7 +62,57 @@ img {
 }
 
 hr {
-  color: turquoise;
+  color: #57d1c5;
+}
+
+.main {
+  margin-top: 90px;
+}
+
+#nav_wrapper {
+  display: flex;
+  background-color: #57d1c5;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#name {
+  padding: 20px;
+}
+
+#name a {
+  font: 1.2em/1 "Lato", sans-serif;
+  color: #5d5d5d;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+#nav_bar {
+  display: flex;
+  justify-content: flex-end; /* Add this line */
+}
+
+#nav_bar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+#nav_bar li {
+  padding: 0px 20px;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  list-style-position: inside;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .sketch {
@@ -69,9 +133,6 @@ img {
   object-fit: contain;
 }
 
-@media only screen and (max-width: 600px) {
-}
-
 td {
   text-align: center;
 }
@@ -79,7 +140,7 @@ td {
 table,
 th,
 td {
-  border: 2px solid rgb(15, 150, 228);
+  border: 2px solid #0f96e4;
   border-collapse: collapse;
   color: darkolivegreen;
   padding: 15px;
@@ -90,7 +151,7 @@ td {
 
 a {
   color: #2f6a80;
-  font-family: "Lato", sans-serif;
+  font: 1.2em/2 "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -99,16 +160,53 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+#iterative-background {
+  background-image: url("./case-studies/responsive-redesign/assets/site.png");
+  background-size: contain;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #a479ba;
+  margin: 20px;
 }
 
 .case-study-card {
-  width: 200px;
-  background-color: blanchedalmond;
-  text-align: center;
-  padding: 40px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(2px) saturate(70%);
+  width: 400px;
+  height: 250px;
   border-radius: 20px;
-  margin: 20px;
+  align-items: baseline;
+  text-align: center;
+  flex-wrap: wrap;
+  align-self: center;
+
+  p {
+    color: #0d0c0b;
+    font-size: 20px;
+  }
+  h3 {
+    font-weight: 500;
+    color: #363534;
+    font-size: 30px;
+  }
+}
+
+#iterative-background:hover {
+  background-color: #dfb6ee;
 }
 
 iframe {
@@ -122,4 +220,17 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.iframe-wrapper {
+  padding: 2%;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
 }
