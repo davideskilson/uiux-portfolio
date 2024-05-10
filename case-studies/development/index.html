@@ -15,11 +15,22 @@
   </head>
   <body>
     <div id="nav_wrapper">
-      <div id="name"><a href="../../index.html">David Eskilson</a></div>
+      <div id="name">
+        <!-- <a href="../../index.html"> -->
+        David Eskilson
+        <!-- </a> -->
+      </div>
       <nav id="nav_bar">
         <ul>
-          <li><a href="../../index.html">Home</a></li>
-          <li><a href="../index.html">Case Studies</a></li>
+          <li>
+            <a href="https://davideskilson.github.io/uiux-portfolio/">Home</a>
+          </li>
+          <li>
+            <a
+              href="https://davideskilson.github.io/uiux-portfolio/case-studies/"
+              >Case Studies</a
+            >
+          </li>
         </ul>
       </nav>
     </div>
@@ -43,17 +54,17 @@
       <hr />
       <div id="part1">
         <div>
-          <h2>Competitive Analysis</h2>
-          <p>
+          <h2>Target Objectives</h2>
+          <!-- <p>
             In this initial phase of the project, I had the chance to conduct my
             own competitive analysis of websites with a favoriting function and
             consider the various features related to sorting and filtering
             within the favoring aggregation feature. I then reflected on the
             analysis and ultimately used it for inspiration for what features I
             would like to include on the site I eventually built.
-          </p>
+          </p> -->
           <div>
-            <p>
+            <!--     <p>
               Here is a competitive comparison chart for my three chosen
               websites:
             </p>
@@ -180,10 +191,11 @@
               displayed the favorites without giving the user the ability to
               sort or filter their favorites to look for a specific image.
             </p>
+            -->
             <p>
-              Based on my competitive analysis chart and summary paragraphs,
-              here is a list of features that I would like to implement in my
-              own web app:
+              After considering a swath of other websites that implemented their
+              own filtering and aggregating, I thought about some goals for the
+              functionality of my web app:
             </p>
             <ul>
               <li>
@@ -213,7 +225,7 @@
         </div>
       </div>
       <hr />
-      <div id="part2">
+      <!-- <div id="part2">
         <div>
           <h2>Set Up</h2>
           <p>
@@ -221,16 +233,16 @@
             a README and used the create-react-app command to allow me to build
             my app from scrath.
           </p>
-        </div>
+        </div> 
       </div>
-      <hr />
+      <hr />-->
       <div id="part3">
         <div>
-          <h2>Functionality</h2>
+          <h2>Implementation: Coding</h2>
           <p>
             In this part of the project, I chose a theme for my app and coded it
             using React. This app includes aggregation, filtering, and sorting,
-            and it also follows design principles from class and is accessible
+            and it also follows core design principles and is accessible
             (checked with WebAIM).
           </p>
           <p>
@@ -246,26 +258,55 @@
             can sort the books by word count if they desire books of a certain
             length.
           </p>
+          <p>
+            My implementation process started with create-react-app, and from
+            there I first created a component for my book item that would
+            contain the jsx to render each book card, including all of its
+            fields. From there, I used react state mamangement, including
+            useEffect and useState, to allow for filtering catagories that would
+            be changeable by a dropdown menu. Finally, I used react state
+            management as well as a custum sorting function during the rendering
+            process to allow for sorting functionality.
+          </p>
         </div>
       </div>
       <hr />
       <div id="part4">
         <div>
-          <h2>Deployment</h2>
+          <h2>Implementation: Deployment</h2>
           <p>
             In this portion of the project, I deployed the app that I built
             using Vercel.
           </p>
           <div>
             <p>
-              Link to my deployed site:
-              <a href="https://development-black.vercel.app">Here</a>
+              You can access my deployed site
+              <a href="https://development-black.vercel.app">here</a>
+              and can play around with it using the below in site frame.
             </p>
+            <p>
+              Note that in this app, the sorting and filtering functionality are
+              layered, in that one can use any combination of sorting catagories
+              and any combination of filtering catagories at the same time. This
+              feature improves the user experience by allowing for a user to
+              more specifically find what they are looking for using all of the
+              tools I provide at once. Additionally, the text by my catagories
+              changes dynamically with actions by the user, explicitly noting
+              what filter catagories and sorting order are applied in order to
+              limit confusion.
+            </p>
+            <iframe
+              style="border: 1px solid rgba(0, 0, 0, 0.1)"
+              width="100%"
+              height="800"
+              src="https://development-black.vercel.app"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
       <hr />
-      <div id="part5">
+      <!-- <div id="part5">
         <div>
           <h2>README</h2>
           <p>
@@ -276,20 +317,21 @@
           </p>
         </div>
       </div>
-      <hr />
+      <hr /> -->
       <div id="portfolio-readiness">
         <div>
           <h2>Learnings and Reflections</h2>
           <p>
-            Over the course of this project, I was able to both get experience
-            in design by critically analyzing features of another web app as
-            well as go through the full development process including coding and
-            deploying. This coding experiene included the implemetnation of a
-            favoriting feature as well as sorting and filtering, all critical
-            frameworks for many websites. I feel as though I have had the chance
-            to learn a lot about design and development from completing this
-            project, and I look forward to continuing to advance my design and
-            front end engineering skills in future endevours.
+            Over the course of this project, I was able to get experience in
+            front end engineering through the full development process including
+            coding and deployment, and I also got the chance to practice my
+            design skills in tandem and consider the interaction between design
+            and front end coding. In terms of my coding specifically, I
+            implemented filtering, sorting, and aggregating functionality, a
+            hallmark of many modern websites. I feel as though I have had the
+            chance to learn a lot about design and development from completing
+            this project, and I look forward to continuing to advance my front
+            end engineering and design skills in future endevours.
           </p>
         </div>
       </div>
