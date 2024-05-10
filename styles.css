@@ -87,7 +87,7 @@ hr {
 
 #name {
   font: 1.2em/1 "Lato", sans-serif;
-  color: #5d5d5d;
+  color: #8a2f28;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
@@ -113,7 +113,7 @@ hr {
   list-style-position: inside;
   font-weight: 400;
   font-size: 16px;
-  color: #2f6a80;
+  color: #115375;
 }
 
 .sketch {
@@ -184,6 +184,25 @@ a {
 }
 
 #development-background:hover {
+  background-color: #dfb6ee;
+}
+
+#iterative-background {
+  background-image: url("./case-studies/iterative-design/assets/allfig.png");
+  background-size: contain;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #a479ba;
+  margin: 20px;
+}
+
+#iterative-background:hover {
   background-color: #dfb6ee;
 }
 
