@@ -113,7 +113,9 @@ hr {
   list-style-position: inside;
   font-weight: 400;
   font-size: 16px;
-  color: #115375;
+  a {
+    color: #115375;
+  }
 }
 
 .sketch {
