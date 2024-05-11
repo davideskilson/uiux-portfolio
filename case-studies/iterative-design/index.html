@@ -72,7 +72,7 @@
           made sketches of possible interfaces and screens. My sketches can be
           seen below. In the end, we took the the progress bar idea from my
           second sketch, and ultimately used it as a basis to develop a linear
-          navigational flow.
+          navigational flow for the document upload experience.
         </p>
         <div>
           <img
@@ -107,7 +107,7 @@
         </p>
         <p>
           Overall, we were paying closest attention to the ease of navigation
-          and hiding the complexity of the original interface, and we believe
+          and hiding the complexity of the original interface, and we believed
           that the creation of the linear flow behind a home page and a dropdown
           on the home page would do that for us.
         </p>
@@ -155,8 +155,8 @@
           At this stage in the project, we were able to get intermediate
           feedback from out point of contact on the wireframing we had done. She
           said that we did a great job of hiding complexity, but we had hid it a
-          bit too well. She said that a user may be taken off guard by having to
-          upload a document that they did not come prepared with, so she
+          bit too well. She noted that a user may be taken off guard by having
+          to upload a document that they did not come prepared with, so she
           suggested maybe having a landing page where all of the documents
           needed in the process were listed so the user could feel prepared.
           Additionally, she also brought up the idea of handling the edge cases
@@ -175,19 +175,17 @@
         <p>
           Our wireframe went through several changes after the feedback we
           received, but the largest change was arguably the creation of the
-          landing page (see below) after clicking into "Go to application"
-          (previously "upload documents", changed to diminish fear of clicking
-          on the button also based on peer feedback). This landing page
-          essentially was a duplicate of the dropdown on the home page in a
-          larger form and included clear labels indicating whether a document
-          has been uploaded. We also added a numerical status bar, an indicator
-          of how many documents were left, and a written description of how to
-          navigate around the page in order to further assist users with the
-          document uploading process. We also included info buttons next to each
-          button to provide more context about each document if needed. We felt
-          like this page complimented the simplicity of our linear sequence of
-          uploads but also provided the user with more context, which was
-          something our point of contact suggested.
+          landing page (see below) after clicking into "Go to application." This
+          landing page essentially was a duplicate of the dropdown on the home
+          page in a larger form, and it included clear labels indicating whether
+          or not a document has been uploaded. We also added a numerical status
+          bar, an indicator of how many documents were left, and a written
+          description of how to navigate around the page in order to further
+          assist users with the document uploading process. We also included
+          info buttons next to each button to provide more context about each
+          document if needed. We felt like this page complimented the simplicity
+          of our linear sequence of uploads but also provided the user with more
+          context, which was something our point of contact suggested.
         </p>
         <div>
           <img
@@ -197,11 +195,11 @@
           />
         </div>
         <p>
-          In order to make the dropdown button on the home page more clear, we
-          changed the label from "View documents" to "View uploaded documents"
-          (see below) and made sure that the button only appears once the user
-          has already uploaded at least one document, so that they would have
-          more context on what the dropdown button is for.
+          Additionally, in order to make the dropdown button on the home page
+          more clear, we changed the label from "View documents" to "View
+          uploaded documents" (see below) and made sure that the button only
+          appears once the user has already uploaded at least one document, so
+          that they would have more context on what the dropdown button is for.
         </p>
         <div>
           <img
@@ -232,19 +230,22 @@
           believe that they chose these colors to match with the color of their
           logo, but besides that, the dark green was always used on a button, so
           the designer probably wanted to choose a color with great contrast to
-          the rest of the scheme (light colors) to signify clickability. There
-          were also a lot of colors (purples, pinks, yellows), but we felt they
-          used those for more branding purposes, as they stuck primarily to
-          green in their pages. Additionally, we think that the typography was
-          chosen because its round font made the page less formal and
-          intimidating (which is the intention of this webpage) while still
+          the rest of the scheme (light colors) to signify clickability.
+        </p>
+        <p>
+          There were also a lot of colors (purples, pinks, yellows), but we felt
+          as though they were used more so for more branding purposes, as the
+          primary website stuck to the green. Additionally, we think that the
+          typography was chosen because its round font made the page less formal
+          and intimidating (which is the intention of this webpage) while still
           making it easy to read.
         </p>
         <p>
           In our high-fidelity prototype, we mostly stuck to the color scheme
           and fonts given by Uno Health, since the colors and fonts fit within
           the scheme of their webpage and were well-chosen for accessibility.
-          However, there were several color schemes up for debate as well.
+          However, there were a few times in which we elected to diverge from
+          the given style guide.
         </p>
         <img src="assets/figma/Warning.png" alt="Warning page Figma mockup" />
         <p>
@@ -291,34 +292,33 @@
           stand out more.
         </p>
         <p>
-          Lastly, we also made sure that users had a way of retracting on
-          actions if they accidentally clicked something or were not prepared
-          (for example, we give the option to remove documents with a simple
-          click of the x button, the ability to skip certain documents, and also
-          the ability to save and exit halfway through the process).
+          Lastly, we also made sure that users had a way of reversing an action
+          if they accidentally clicked something or were not prepared (for
+          example, we give the option to remove documents with a simple click of
+          the x button, the ability to skip certain documents, and also the
+          ability to save and exit partway through the process).
         </p>
         <hr />
-        <h2>Final Founder Feedback</h2>
+        <h2>Final Feedback</h2>
         <h3>Positve Feedback</h3>
         <p>
           One feature that our Uno Health point of contact liked about our
-          prootype included the list of documents on the preparation page, which
-          would be beneficial to users who might want a checklist they can use
-          to gather documents. She also liked the instructions on the
+          prototype included the list of documents on the preparation page,
+          which would be beneficial to users who might want a checklist they can
+          use to gather documents. She also liked the instructions on the
           preparation page, which reassured the user by telling them that they
           didn't need to have every document ready. She also liked the two entry
-          points on the homepage because they might help prevent mixup between
+          points on the homepage because they might help prevent a mixup between
           members.
         </p>
         <h3>Constructive Feedback</h3>
         <ul>
           <li>
             One concern was the misuse of error state instead of empty state.
-            Our prototype uses error states to communicate when a user hasn't
+            Our prototype uses error states to communicate when a user has not
             uploaded something, but this is not due to an error, so there should
             be some default empty state. The error state should be reserved for
-            documents that are not uploaded properly, or incorrect documents
-            (which is something that is manually checked by the Uno team).
+            documents that are not uploaded properly, or incorrect documents.
           </li>
           <li>
             Another concern was the upload pages. There's enough space to
@@ -331,24 +331,24 @@
             In addition, our point of contact discussed the tradeoff between
             simplicity and flexibility. The linear sequence simplifies the
             upload process, so that should be the most obvious route to take.
-            The other routes (allowing the user to navigate to a specific page)
-            should be downplayed.
+            The other routes (e.g., allowing the user to navigate to a specific
+            page) should be downplayed.
           </li>
           <li>
             Lastly, we talked about the purpose of the dropdown route. Since
             users might not expect to see a list of documents, and be able to
             navigate from the dropdown, this feature might not be discovered /
-            used. It's also a puplicate route (similar to the preparation page),
-            so it could be simplified to just how many documents need to be
-            uploaded. It's ok if the user needs to click one extra button to see
-            the same information.
+            used. It is also a duplicate route (similar to the preparation
+            page), so it could be simplified to just how many documents need to
+            be uploaded. Requring the user to click one extra button to see the
+            same information is not the end of the world.
           </li>
         </ul>
         <hr />
         <h2>Learnings and Reflections</h2>
         <p>
           A key way in which I improved my soft skills relating to design was in
-          my experience working as a team throughout the design process. This
+          my experience working on a team throughout the design process. This
           gave me a chance to deal with disagreements that came up and to work
           through design problems more explicitly, since everyone in the group
           had to be on the same page about everything. Over the course of this
@@ -373,7 +373,7 @@
           role in the redesign of the eligibility check page to make it more
           user friendly, and I also assisted in the Figma prototyping and
           creation of the style guide. But, in a situation where, again, we were
-          all working so closely together, it can be hard to delineate seperate
+          all working so closely together, it can be hard to delineate separate
           tasks that I specifically accomplished, since the entire project was a
           team effort.
         </p>
